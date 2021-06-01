@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@700&display=swap");
+@import url('https://fonts.googleapis.com/css?family=Raleway:200');
 * {
 	margin: 0;
 	padding: 0;
@@ -11,702 +12,3476 @@ html {
 
 
 /*--------------------------------*/
-
-section {
-	height: 100vh;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-}
-
-body {
-	color: rgb(218, 214, 214);
-	font-family: "Montserrat", sans-serif;
-}
-
-p {
-	font-size: 18px
-}
-
-h1 {
-	font-size: 55px;
-	font-weight: bold;
-}
-
-h2 {
-	font-size: 25px;
-}
-
-h3 {
-	font-size: 20px;
-}
-
-a {
-	text-decoration: none;
-	cursor: pointer;
-}
-
-
-/*------------------------------------------------*/
-
-.sidebar {
-	z-index: 100;
-	position: fixed;
-	top: 50%;
-	transform: translateY(-50%);
-	background-color: #414141;
-}
-
-.nav-item {
-	position: relative;
-}
-
-.nav-item:not(:last-child) {
-	margin-bottom: 10px;
-}
-
-.nav-link {
-	color: #fff;
-	text-decoration: none;
-	font-size: 20px;
-	font-family: "Montserrat", sans-serif;
-}
-
-.nav-link i {
-	width: 45px;
-	height: 45px;
-	display: inline-flex;
-	justify-content: center;
-	align-items: center;
-	background-color: #414141;
-	transition: all 0.3s;
-}
-
-.nav-link .title {
-	position: absolute;
-	background-color: #414141;
-	height: 100%;
-	padding-right: 20px;
-	padding-left: 20px;
-	line-height: 45px;
-	transform: translateX(-100%);
-	transition: all 0.3s;
-	z-index: -1;
-}
-
-.nav-item:hover i {
-	transform: scale(1.1);
-	box-shadow: 0px 0 20px rgba(0, 0, 0, 0.8);
-}
-
-.nav-item:hover .title {
-	transform: translateX(0);
-}
-
-
-/*------------------------------------*/
-
-#logo span {
-	position: absolute;
-	top: 6%;
-	left: 10%;
-}
-
-#logo img {
-	position: absolute;
-	top: 3.5%;
-	left: 7%;
-	width: 50px;
-	height: 50px;
-}
-
-#main {
-	background-image: url(https://www.depeces.com/wp-content/uploads/2019/04/Ojos-de-la-langosta-mantis.jpg);
-	background-size: cover;
-	background-attachment: fixed;
-	background-position: top center;
-}
-
-#main h1 {
-	text-align: center;
-	margin: 1em 0em 1em 0em;
-}
-
-#main iframe {
-	position: absolute;
-	bottom: 5%;
-	right: 5%;
-}
-
-#main_text {
-	text-align: center;
-	left: 4%;
-	top: 20%;
-	position: absolute;
-	width: 40%;
-}
-
-#main p {
-	font-size: 20px;
-}
-
-#main ul {
-	padding: 0;
-	list-style-type: none;
-	position: absolute;
-	bottom: 20%;
-	left: 15%;
-}
-
-#main li {
-	font-size: 25px;
-	width: 8em;
-	height: 2em;
-	color: orange;
-	border-left: 0.08em solid;
-	position: relative;
-	margin-top: 0.8em;
-	cursor: pointer;
-}
-
-#main li::before,
-#main li::after {
-	content: '';
-	position: absolute;
-	width: inherit;
-	border-left: inherit;
-	z-index: -1;
-}
-
-#main li::before {
-	height: 80%;
-	top: 10%;
-	left: calc(-0.15em - 0.08em * 2);
-	filter: brightness(0.8);
-}
-
-#main li::after {
-	height: 60%;
-	top: 20%;
-	left: calc(-0.15em * 2 - 0.08em * 3);
-	filter: brightness(0.6);
-}
-
-#main li span {
-	color: orange;
-	position: relative;
-	height: 120%;
-	top: -10%;
-	box-sizing: border-box;
-	border: 0.08em solid;
-	background-color: #333;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	font-family: sans-serif;
-	text-transform: capitalize;
-	transform: translateX(calc(-0.15em * 3 - 0.08em * 2));
-	transition: 0.3s;
-}
-
-#main li:hover span {
-	transform: translateX(0.15em);
-}
-
-#investigacion {
-	display: grid;
-	background-image: url("./images/justin.png");
-	background-repeat: no-repeat;
-	background-size: cover;
-}
-
-#investigacion .content {
-  text-align:justify;  
-  text-justify:auto;
-	align-items: center;
-	justify-content: center;
-	position: relative;
-	top: 15%;
-}
-
-#investigacion img {
-	float: right;
-	width: 20%;
-	margin-right: 5%;
-	margin-left: 5%;
-}
-
-#investigacion p {
-	position: relative;
-	float: left;
-	width: 63%;
-	margin-left: 7%;
-}
-
-#investigacion .caja1 {
-	margin: auto;
-	display: table;
-	width: 100%;
-	height: 100%;
-	background-color: rgb(75, 75, 75);
-	opacity: 0;
-	-webkit-transition: opacity 0.3s;
-	-moz-transition: opacity 0.3s;
-}
-
-#investigacion .caja2 {
-	margin: auto;
-	display: table;
-	width: 100%;
-	height: 100%;
-	background-color: rgb(75, 75, 75);
-	opacity: 0;
-	-webkit-transition: opacity 0.3s;
-	-moz-transition: opacity 0.3s;
-}
-
-#investigacion .caja2:hover {
-	opacity: 1;
-}
-
-#investigacion .caja1:hover {
-	opacity: 1;
-}
-
-#taxonomia .fondo1 {
-	background-image: url("./images/taxonomia.jpg");
-	background-size: 50vh;
-	background-attachment: fixed;
-	background-position: 18% 5%;
-	background-repeat: no-repeat;
-	float: left;
-	width: 50%;
-	height: 100%;
-	z-index: 2;
-}
-
-#taxonomia .fondo2 {
-	background-image: url("./images/especies.png");
-	background-size: 90vh;
-	background-attachment: fixed;
-	background-position: 90% 10%;
-	background-repeat: no-repeat;
-	float: right;
-	width: 50%;
-	height: 100%;
-	z-index: 2;
-}
-
-#taxonomia .caja1 {
-	overflow: hidden;
-	float: left;
-	width: 100%;
-	height: 100%;
-	background-color: rgba(2, 2, 2, 0.9);
-	opacity: 0;
-	-webkit-transition: opacity 0.3s;
-	-moz-transition: opacity 0.3s;
-}
-
-#taxonomia .caja1:hover {
-	opacity: 1;
-}
-
-#taxonomia .caja1 p#headline {
-	display: flex;
-	justify-content: center;
-	margin-left: -900px;
-	font-size: 30px;
-	text-align: center;
-	margin-top: 70px;
-}
-
-#taxonomia .caja1:hover p#headline {
-	margin-left: 2%;
-	-webkit-transition: margin 0.3s;
-	-moz-transition: margin 0.3s;
-}
-
-#taxonomia .caja1 p#info2 {
-	position: absolute;
-	width: 40%;
-	margin-left: 5%;
-	margin-top: 300px;
-	-webkit-transition: margin 0.3s;
-	-moz-transition: margin 0.3s;
-}
-
-#taxonomia .caja1:hover p#info2 {
-	margin-top: 5%;
-	margin-left: 5%;
-}
-
-#taxonomia .caja2 {
-  text-align:justify;  
-  text-justify:auto;
-	overflow: hidden;
-	float: right;
-	width: 100%;
-	height: 100%;
-	background-color: rgba(2, 2, 2, 0.9);
-	opacity: 0;
-	-webkit-transition: opacity 0.3s;
-	-moz-transition: opacity 0.3s;
-}
-
-#taxonomia .caja2:hover {
-	opacity: 1;
-}
-
-#taxonomia .caja2 p#headline {
-	display: flex;
-	margin-right: -900px;
-	justify-content: center;
-	font-size: 30px;
-	text-align: center;
-	margin-top: 70px;
-}
-
-#taxonomia .caja2:hover p#headline {
-	margin-right: 2%;
-	-webkit-transition: margin 0.3s;
-	-moz-transition: margin 0.3s;
-}
-
-#taxonomia span {
-	font-size: 25px;
-	text-decoration: underline #fff;
-	color: #FFD100;
+@media screen and (min-width: 1075px){
+  section {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  body {
+    color: rgb(218, 214, 214);
+    font-family: "Montserrat", sans-serif;
+  }
+
+  p {
+    font-size: 18px
+  }
+
+  h1 {
+    font-size: 55px;
+    font-weight: bold;
+  }
+
+  h2 {
+    font-size: 25px;
+  }
+
+  h3 {
+    font-size: 20px;
+  }
+
+  a {
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+
+  /*------------------------------------------------*/
+
+  .sidebar {
+    z-index: 100;
+    position: fixed;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #414141;
+  }
+
+  .nav-item {
+    position: relative;
+  }
+
+  .nav-item:not(:last-child) {
+    margin-bottom: 10px;
+  }
+
+  .nav-link {
+    color: #fff;
+    text-decoration: none;
+    font-size: 20px;
+    font-family: "Montserrat", sans-serif;
+  }
+
+  .nav-link i {
+    width: 45px;
+    height: 45px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #414141;
+    transition: all 0.3s;
+  }
+
+  .nav-link .title {
+    position: absolute;
+    background-color: #414141;
+    height: 100%;
+    padding-right: 20px;
+    padding-left: 20px;
+    line-height: 45px;
+    transform: translateX(-100%);
+    transition: all 0.3s;
+    z-index: -1;
+  }
+
+  .nav-item:hover i {
+    transform: scale(1.1);
+    box-shadow: 0px 0 20px rgba(0, 0, 0, 0.8);
+  }
+
+  .nav-item:hover .title {
+    transform: translateX(0);
+  }
+
+
+  /*------------------------------------*/
+
+  #logo span {
+    position: absolute;
+    top: 6%;
+    left: 10%;
+  }
+
+  #logo img {
+    position: absolute;
+    top: 3.5%;
+    left: 7%;
+    width: 50px;
+    height: 50px;
+  }
+
+  #main {
+    background-image: url(https://www.depeces.com/wp-content/uploads/2019/04/Ojos-de-la-langosta-mantis.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: top center;
+  }
+
+  #main h1 {
+    text-align: center;
+    margin: 1em 0em 1em 0em;
+  }
+
+  #main iframe {
+    position: absolute;
+    bottom: 5%;
+    right: 5%;
+  }
+
+  #main_text {
+    text-align: center;
+    left: 4%;
+    top: 20%;
+    position: absolute;
+    width: 40%;
+  }
+
+  #main p {
+    font-size: 20px;
+  }
+
+  #main ul {
+    padding: 0;
+    list-style-type: none;
+    position: absolute;
+    bottom: 20%;
+    left: 15%;
+  }
+
+  #main li {
+    font-size: 25px;
+    width: 8em;
+    height: 2em;
+    color: orange;
+    border-left: 0.08em solid;
+    position: relative;
+    margin-top: 0.8em;
+    cursor: pointer;
+  }
+
+  #main li::before,
+  #main li::after {
+    content: '';
+    position: absolute;
+    width: inherit;
+    border-left: inherit;
+    z-index: -1;
+  }
+
+  #main li::before {
+    height: 80%;
+    top: 10%;
+    left: calc(-0.15em - 0.08em * 2);
+    filter: brightness(0.8);
+  }
+
+  #main li::after {
+    height: 60%;
+    top: 20%;
+    left: calc(-0.15em * 2 - 0.08em * 3);
+    filter: brightness(0.6);
+  }
+
+  #main li span {
+    color: orange;
+    position: relative;
+    height: 120%;
+    top: -10%;
+    box-sizing: border-box;
+    border: 0.08em solid;
+    background-color: #333;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: sans-serif;
+    text-transform: capitalize;
+    transform: translateX(calc(-0.15em * 3 - 0.08em * 2));
+    transition: 0.3s;
+  }
+
+  #main li:hover span {
+    transform: translateX(0.15em);
+  }
+
+  #investigacion {
+    display: grid;
+    background-image: url("./images/justin.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  #investigacion .content {
+    text-align:justify;  
+    text-justify:auto;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    top: 15%;
+  }
+
+  #investigacion img {
+    float: right;
+    width: 20%;
+    margin-right: 5%;
+    margin-left: 5%;
+  }
+
+  #investigacion p {
+    position: relative;
+    float: left;
+    width: 63%;
+    margin-left: 7%;
+  }
+
+  #investigacion .caja1 {
+    margin: auto;
+    display: table;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(75, 75, 75);
+    opacity: 0;
+    -webkit-transition: opacity 0.3s;
+    -moz-transition: opacity 0.3s;
+  }
+
+  #investigacion .caja2 {
+    margin: auto;
+    display: table;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(75, 75, 75);
+    opacity: 0;
+    -webkit-transition: opacity 0.3s;
+    -moz-transition: opacity 0.3s;
+  }
+
+  #investigacion .caja2:hover {
+    opacity: 1;
+  }
+
+  #investigacion .caja1:hover {
+    opacity: 1;
+  }
+
+  #taxonomia .fondo1 {
+    background-image: url("./images/taxonomia.jpg");
+    background-size: 50vh;
+    background-attachment: fixed;
+    background-position: 18% 5%;
+    background-repeat: no-repeat;
+    float: left;
+    width: 50%;
+    height: 100%;
+    z-index: 2;
+  }
+
+  #taxonomia .fondo2 {
+    background-image: url("./images/especies.png");
+    background-size: 90vh;
+    background-attachment: fixed;
+    background-position: 90% 10%;
+    background-repeat: no-repeat;
+    float: right;
+    width: 50%;
+    height: 100%;
+    z-index: 2;
+  }
+
+  #taxonomia .caja1 {
+    overflow: hidden;
+    float: left;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(2, 2, 2, 0.9);
+    opacity: 0;
+    -webkit-transition: opacity 0.3s;
+    -moz-transition: opacity 0.3s;
+  }
+
+  #taxonomia .caja1:hover {
+    opacity: 1;
+  }
+
+  #taxonomia .caja1 p#headline {
+    display: flex;
+    justify-content: center;
+    margin-left: -900px;
+    font-size: 30px;
+    text-align: center;
+    margin-top: 70px;
+  }
+
+  #taxonomia .caja1:hover p#headline {
+    margin-left: 2%;
+    -webkit-transition: margin 0.3s;
+    -moz-transition: margin 0.3s;
+  }
+
+  #taxonomia .caja1 p#info2 {
+    position: absolute;
+    width: 40%;
+    margin-left: 5%;
+    margin-top: 300px;
+    -webkit-transition: margin 0.3s;
+    -moz-transition: margin 0.3s;
+  }
+
+  #taxonomia .caja1:hover p#info2 {
+    margin-top: 5%;
+    margin-left: 5%;
+  }
+
+  #taxonomia .caja2 {
+    text-align:justify;  
+    text-justify:auto;
+    overflow: hidden;
+    float: right;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(2, 2, 2, 0.9);
+    opacity: 0;
+    -webkit-transition: opacity 0.3s;
+    -moz-transition: opacity 0.3s;
+  }
+
+  #taxonomia .caja2:hover {
+    opacity: 1;
+  }
+
+  #taxonomia .caja2 p#headline {
+    display: flex;
+    margin-right: -900px;
+    justify-content: center;
+    font-size: 30px;
+    text-align: center;
+    margin-top: 70px;
+  }
+
+  #taxonomia .caja2:hover p#headline {
+    margin-right: 2%;
+    -webkit-transition: margin 0.3s;
+    -moz-transition: margin 0.3s;
+  }
+
+  #taxonomia span {
+    font-size: 25px;
+    text-decoration: underline #fff;
+    color: #FFD100;
+  }
+
+  #taxonomia .sub {
+    font-size: 20px;
+    color: #FFB300;
+  }
+
+  #taxonomia .caja2 p#info2 {
+    position: absolute;
+    overflow: auto;
+    width: 40%;
+    height: 70%;
+    margin-left: 5%;
+    padding-right: 1%;
+    -webkit-transition: margin 0.3s;
+    -moz-transition: margin 0.3s;
+  }
+
+  #taxonomia .caja2:hover p#info2 {
+    margin-top: 5%;
+    margin-left: 5%;
+  }
+
+  #comportamiento {
+    background-image: url("./images/fondo1.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: top center;
+  }
+
+  #comportamiento .caja1 {
+    text-align:justify;  
+    text-justify:auto;
+    overflow: hidden;
+    float: left;
+    width: 50%;
+    height: 100%;
+    background-color: rgba(75, 75, 75, 0.9);
+    opacity: 0;
+    -webkit-transition: opacity 0.3s;
+    -moz-transition: opacity 0.3s;
+  }
+
+  #comportamiento .caja1:hover {
+    opacity: 1;
+  }
+
+  #comportamiento .caja1 p#headline {
+    display: flex;
+    justify-content: center;
+    margin-left: -900px;
+    font-size: 30px;
+    text-align: center;
+    margin-top: 70px;
+  }
+
+  #comportamiento .caja1:hover p#headline {
+    margin-left: 2%;
+    -webkit-transition: margin 0.3s;
+    -moz-transition: margin 0.3s;
+  }
+
+  #comportamiento .caja1 p#info2 {
+    position: absolute;
+    width: 40%;
+    margin-left: 5%;
+    margin-top: 300px;
+    -webkit-transition: margin 0.3s;
+    -moz-transition: margin 0.3s;
+  }
+
+  #comportamiento .caja1:hover p#info2 {
+    margin-top: 5%;
+    margin-left: 5%;
+  }
+
+  #comportamiento .caja2 {
+    text-align:justify;  
+    text-justify:auto;
+    overflow: hidden;
+    float: right;
+    width: 50%;
+    height: 100%;
+    background-color: rgba(75, 75, 75, 0.9);
+    opacity: 0;
+    -webkit-transition: opacity 0.3s;
+    -moz-transition: opacity 0.3s;
+  }
+
+  #comportamiento .caja2:hover {
+    opacity: 1;
+  }
+
+  #comportamiento .caja2 p#headline {
+    display: flex;
+    margin-right: -900px;
+    justify-content: center;
+    font-size: 30px;
+    text-align: center;
+    margin-top: 70px;
+  }
+
+  #comportamiento .caja2:hover p#headline {
+    margin-right: 2%;
+    -webkit-transition: margin 0.3s;
+    -moz-transition: margin 0.3s;
+  }
+
+  #comportamiento span {
+    font-size: 25px;
+    text-decoration: underline #fff;
+    color: #FFD100;
+  }
+
+  #comportamiento .sub {
+    font-size: 20px;
+    color: #FFB300;
+  }
+
+  #comportamiento .caja2 p#info2 {
+    position: absolute;
+    overflow: auto;
+    width: 40%;
+    height: 70%;
+    margin-left: 5%;
+    padding-right: 1%;
+    -webkit-transition: margin 0.3s;
+    -moz-transition: margin 0.3s;
+  }
+
+  #comportamiento .caja2:hover p#info2 {
+    margin-top: 5%;
+    margin-left: 5%;
+  }
+
+  #habitat {
+    background-image: url("./images/habitat.png");
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: top center;
+  }
+
+  #habitat .caja1 {
+    text-align:justify;  
+    text-justify:auto;
+    overflow: hidden;
+    float: left;
+    width: 50%;
+    height: 100%;
+    background-color: rgba(75, 75, 75, 0.9);
+    opacity: 0;
+    -webkit-transition: opacity 0.3s;
+    -moz-transition: opacity 0.3s;
+  }
+
+  #habitat .caja1:hover {
+    opacity: 1;
+  }
+
+  #habitat .caja1 p#headline {
+    display: flex;
+    justify-content: center;
+    margin-left: -900px;
+    font-size: 30px;
+    text-align: center;
+    margin-top: 70px;
+  }
+
+  #habitat .caja1:hover p#headline {
+    margin-left: 2%;
+    -webkit-transition: margin 0.3s;
+    -moz-transition: margin 0.3s;
+  }
+
+  #habitat .caja1 p#info2 {
+    position: absolute;
+    width: 40%;
+    margin-left: 5%;
+    margin-top: 300px;
+    -webkit-transition: margin 0.3s;
+    -moz-transition: margin 0.3s;
+  }
+
+  #habitat .caja1:hover p#info2 {
+    margin-top: 5%;
+    margin-left: 5%;
+  }
+
+  #habitat .caja2 {
+    text-align:justify;  
+    text-justify:auto;
+    overflow: hidden;
+    float: right;
+    width: 50%;
+    height: 100%;
+    background-color: rgba(75, 75, 75, 0.9);
+    opacity: 0;
+    -webkit-transition: opacity 0.3s;
+    -moz-transition: opacity 0.3s;
+  }
+
+  #habitat .caja2:hover {
+    opacity: 1;
+  }
+
+  #habitat .caja2 p#headline {
+    display: flex;
+    margin-right: -900px;
+    justify-content: center;
+    font-size: 30px;
+    text-align: center;
+    margin-top: 70px;
+  }
+
+  #habitat .caja2:hover p#headline {
+    margin-right: 2%;
+    -webkit-transition: margin 0.3s;
+    -moz-transition: margin 0.3s;
+  }
+
+  #habitat .caja2 p#info2 {
+    position: absolute;
+    width: 40%;
+    margin-left: 5%;
+    margin-top: 300px;
+    -webkit-transition: margin 0.3s;
+    -moz-transition: margin 0.3s;
+  }
+
+  #habitat .caja2:hover p#info2 {
+    margin-top: 5%;
+    margin-left: 5%;
+  }
+
+  #gastronomia {
+    background-image: url("https://img.freepik.com/foto-gratis/pescados-verduras-cubiertos-sobre-fondo-negro_1220-552.jpg?size=626&ext=jpg");
+    background-repeat: no-repeat;
+    background-size: cover
+  }
+
+  #gastronomia .content {
+    text-align:justify;  
+    text-justify:auto;
+    position: relative;
+    margin: auto;
+    float: left;
+    width: 50%;
+    height: 100%;
+    margin-top: 5%;
+    margin-left: 7%;
+    margin-right: 4%
+  }
+
+  #gastronomia p {
+    left: 0;
+    position: absolute;
+    top: 30%;
+  }
+
+  #gastronomia .images {
+    position: relative;
+    float: right;
+    width: 50%;
+    height: 100%;
+  }
+
+  #gastronomia .images img {
+    position: relative;
+    display: inline-table;
+    margin: 2% 0% 0% 2%;
+    height: 100%;
+    width: 60%;
+    background-color: rgba(75, 75, 75, 0.9);
+    opacity: 1;
+    -webkit-transition: opacity 0.3s;
+    -moz-transition: opacity 0.3s;
+  }
+
+  #gastronomia .images div {
+    margin-top: 10px;
+    position: relative;
+    height: 30%;
+  }
+
+  #gastronomia .images p {
+    font-size: 30px;
+    color: #fff;
+    opacity: 0;
+    -webkit-transition: opacity 0.3s;
+    -moz-transition: opacity 0.3s;
+  }
+
+  #gastronomia .images #uno:hover {
+    opacity: 0.6;
+  }
+
+  #gastronomia .images #uno:hover+#textuno {
+    opacity: 1;
+  }
+
+  #gastronomia .images #dos:hover {
+    opacity: 0.5;
+  }
+
+  #gastronomia .images #dos:hover+#textdos {
+    opacity: 1;
+  }
+
+  #gastronomia .images #tres:hover {
+    opacity: 0.6;
+  }
+
+  #gastronomia .images #tres:hover+#texttres {
+    opacity: 1;
+  }
+
+  #gastronomia .images img.middle {
+    margin-right: 5%;
+  }
+
+  #gastronomia .images img.not {
+    margin-left: 13%;
+  }
+
+  #gastronomia .images p.middle {
+    margin-top: 25px;
+    margin-left: 23%;
+  }
+
+  #gastronomia .images p.not {
+    margin-top: 25px;
+    margin-left: 33%;
+  }
+
+
+.wrapper {
+  top: 10%;
+  left: 40%;
+  width: 300px;
+  height: 350px;
+  perspective: 900px;
+}
+
+.container {
+  position: absolute;
+  top: 0%;
+  width: 100%;
+  height: 100%;
+  transition: .5s all ease;
+  transform: rotateX(60deg) scale(0.7);
+  perspective: 900px;
+  box-shadow: 0px 20px 50px #555;
+  animation: entry 1s linear 1;
+}
+
+#c0 {
+  position: absolute;
+  top: 0%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to bottom, #eba65b 30%, #d99267 100%);
+  z-index: 300;
+  box-shadow: 0px 20px 100px #555;
+}
+
+#c1 {
+  background: linear-gradient(to bottom, #59476f 30%, #7b88d1 100%);
+  box-shadow: 0px 20px 100px #555;
+  left: 100%;
+  z-index: 0;
+}
+
+#c2 {
+  left: -100%;
+  z-index: 0;
+  background: linear-gradient(to bottom, #59476f 30%, #7b88d1 100%);
+  box-shadow: 0px 20px 100px #555;
+}
+
+.container:hover {
+  cursor: pointer;
+  transform: rotate(0deg) scale(1) translateY(10px);
+  transition: .5s all ease;
+  z-index: 400;
+}
+
+.image {
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  width: 100%;
+  height: 75%;
+}
+
+.container img {
+  position: absolute;
+  display:block;
+  margin: 0 50px 50px 40px;
+  background-position: 50% 5%;
+  width: 75%;
+  height: 100%;
+}
+
+
+
+#about span {
+  position: absolute;
+  top: 0%;
+  left: 55%;
+  border-radius: 100%;
+  background-color: #fff;
+  z-index: 10;
+}
+
+
+.story {
+  position: absolute;
+  bottom: 10%;
+  left: 0%;
+  height: 15%;
+  width: 100%;
+  z-index: 30;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+}
+
+
+
+.info {
+ margin-top: 20px;
+}
+
+#about h3 {
+  font-size: 20px;
+  text-align: center;
+  text-shadow: 0px 0px 10px #eee;
+  color: #eee;
+  letter-spacing: 2px;
+}
+
+.page {
+  position: absolute;
+  top: 80%;
+  width: 100%;
+  left: 0%;
+  height: 20%;
+  z-index: 30;
+}
+
+#about li {
+  position: absolute;
+  top: 50%;
+  list-style: none;
+  color: #111;
+}
+
+#about li:nth-child(1) {
+  left: 15%;
+  animation: simple1 1s linear infinite;
+}
+
+#about li:nth-child(2) {
+  right: 15%;
+  animation: simple 1s linear infinite;
+}
+
+@keyframes simple {
+  50% {
+    transform: translateX(10px);
+    opacity: 0.5;
+  }
+  100% {
+    transform: translateX(10px);
+    opacity: 0;
+  }
+}
+
+@keyframes simple1 {
+  50% {
+    transform: translateX(-10px);
+    opacity: 0.5;
+  }
+  100% {
+    transform: translateX(-10px);
+    opacity: 0;
+  }
+}
+
+@keyframes entry {
+  0% {
+    top: -20%;
+    opacity: 0.1;
+  }
+  100% {
+    top: 0%;
+  }
+}
+}
+/*---------------------------------------------------------------------------------------------------------*/
+@media screen and (min-width: 965px) and (max-width: 1075px){
+  section {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  body {
+    color: rgb(218, 214, 214);
+    font-family: "Montserrat", sans-serif;
+  }
+
+  p {
+    font-size: 18px
+  }
+
+  h1 {
+    font-size: 55px;
+    font-weight: bold;
+  }
+
+  h2 {
+    font-size: 25px;
+  }
+
+  h3 {
+    font-size: 20px;
+  }
+
+  a {
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+
+  /*------------------------------------------------*/
+
+  .sidebar {
+    z-index: 100;
+    position: fixed;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #414141;
+  }
+
+  .nav-item {
+    position: relative;
+  }
+
+  .nav-item:not(:last-child) {
+    margin-bottom: 10px;
+  }
+
+  .nav-link {
+    color: #fff;
+    text-decoration: none;
+    font-size: 20px;
+    font-family: "Montserrat", sans-serif;
+  }
+
+  .nav-link i {
+    width: 45px;
+    height: 45px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #414141;
+    transition: all 0.3s;
+  }
+
+  .nav-link .title {
+    position: absolute;
+    background-color: #414141;
+    height: 100%;
+    padding-right: 20px;
+    padding-left: 20px;
+    line-height: 45px;
+    transform: translateX(-100%);
+    transition: all 0.3s;
+    z-index: -1;
+  }
+
+  .nav-item:hover i {
+    transform: scale(1.1);
+    box-shadow: 0px 0 20px rgba(0, 0, 0, 0.8);
+  }
+
+  .nav-item:hover .title {
+    transform: translateX(0);
+  }
+
+
+  /*------------------------------------*/
+
+  #logo span {
+    position: absolute;
+    top: 6%;
+    left: 10%;
+  }
+
+  #logo img {
+    position: absolute;
+    top: 3.5%;
+    left: 7%;
+    width: 50px;
+    height: 50px;
+  }
+
+  #main {
+    background-image: url(https://www.depeces.com/wp-content/uploads/2019/04/Ojos-de-la-langosta-mantis.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: top center;
+  }
+
+  #main h1 {
+    text-align: center;
+    margin: 1em 0em 1em 0em;
+  }
+
+  #main iframe {
+    position: absolute;
+    bottom: 5%;
+    right: 5%;
+  }
+
+  #main_text {
+    text-align: center;
+    left: 4%;
+    top: 20%;
+    position: absolute;
+    width: 40%;
+  }
+
+  #main p {
+    font-size: 20px;
+  }
+
+  #main ul {
+    padding: 0;
+    list-style-type: none;
+    position: absolute;
+    bottom: 20%;
+    left: 15%;
+  }
+
+  #main li {
+    font-size: 25px;
+    width: 8em;
+    height: 2em;
+    color: orange;
+    border-left: 0.08em solid;
+    position: relative;
+    margin-top: 0.8em;
+    cursor: pointer;
+  }
+
+  #main li::before,
+  #main li::after {
+    content: '';
+    position: absolute;
+    width: inherit;
+    border-left: inherit;
+    z-index: -1;
+  }
+
+  #main li::before {
+    height: 80%;
+    top: 10%;
+    left: calc(-0.15em - 0.08em * 2);
+    filter: brightness(0.8);
+  }
+
+  #main li::after {
+    height: 60%;
+    top: 20%;
+    left: calc(-0.15em * 2 - 0.08em * 3);
+    filter: brightness(0.6);
+  }
+
+  #main li span {
+    color: orange;
+    position: relative;
+    height: 120%;
+    top: -10%;
+    box-sizing: border-box;
+    border: 0.08em solid;
+    background-color: #333;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: sans-serif;
+    text-transform: capitalize;
+    transform: translateX(calc(-0.15em * 3 - 0.08em * 2));
+    transition: 0.3s;
+  }
+
+  #main li:hover span {
+    transform: translateX(0.15em);
+  }
+
+  #investigacion {
+    display: grid;
+    background-image: url("./images/justin.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  #investigacion .content {
+    text-align:justify;  
+    text-justify:auto;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    top: 15%;
+  }
+
+  #investigacion img {
+    float: right;
+    width: 20%;
+    margin-right: 5%;
+    margin-left: 5%;
+  }
+
+  #investigacion p {
+    position: relative;
+    float: left;
+    width: 63%;
+    margin-left: 7%;
+  }
+
+  #investigacion .caja1 {
+    margin: auto;
+    display: table;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(75, 75, 75);
+    opacity: 0;
+    -webkit-transition: opacity 0.3s;
+    -moz-transition: opacity 0.3s;
+  }
+
+  #investigacion .caja2 {
+    margin: auto;
+    display: table;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(75, 75, 75);
+    opacity: 0;
+    -webkit-transition: opacity 0.3s;
+    -moz-transition: opacity 0.3s;
+  }
+
+  #investigacion .caja2:hover {
+    opacity: 1;
+  }
+
+  #investigacion .caja1:hover {
+    opacity: 1;
+  }
+
+  #taxonomia .fondo1 {
+    background-image: url("./images/taxonomia.jpg");
+    background-size: 50vh;
+    background-attachment: fixed;
+    background-position: 18% 5%;
+    background-repeat: no-repeat;
+    float: left;
+    width: 50%;
+    height: 100%;
+    z-index: 2;
+  }
+
+  #taxonomia .fondo2 {
+    background-image: url("./images/especies.png");
+    background-size: 90vh;
+    background-attachment: fixed;
+    background-position: 90% 10%;
+    background-repeat: no-repeat;
+    float: right;
+    width: 50%;
+    height: 100%;
+    z-index: 2;
+  }
+
+  #taxonomia .caja1 {
+    overflow: hidden;
+    float: left;
+    padding-left: 4%;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(2, 2, 2, 0.9);
+    opacity: 0;
+    -webkit-transition: opacity 0.3s;
+    -moz-transition: opacity 0.3s;
+  }
+
+  #taxonomia .caja1:hover {
+    opacity: 1;
+  }
+
+  #taxonomia .caja1 p#headline {
+    display: flex;
+    justify-content: center;
+    margin-left: -900px;
+    font-size: 30px;
+    text-align: center;
+    margin-top: 70px;
+  }
+
+  #taxonomia .caja1:hover p#headline {
+    margin-left: 2%;
+    -webkit-transition: margin 0.3s;
+    -moz-transition: margin 0.3s;
+  }
+
+  #taxonomia .caja1 p#info2 {
+    position: absolute;
+    width: 40%;
+    margin-left: 5%;
+    margin-top: 300px;
+    -webkit-transition: margin 0.3s;
+    -moz-transition: margin 0.3s;
+  }
+
+  #taxonomia .caja1:hover p#info2 {
+    margin-top: 5%;
+    margin-left: 5%;
+  }
+
+  #taxonomia .caja2 {
+    text-align:justify;  
+    text-justify:auto;
+    overflow: hidden;
+    float: right;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(2, 2, 2, 0.9);
+    opacity: 0;
+    -webkit-transition: opacity 0.3s;
+    -moz-transition: opacity 0.3s;
+  }
+
+  #taxonomia .caja2:hover {
+    opacity: 1;
+  }
+
+  #taxonomia .caja2 p#headline {
+    display: flex;
+    margin-right: -900px;
+    justify-content: center;
+    font-size: 30px;
+    text-align: center;
+    margin-top: 70px;
+  }
+
+  #taxonomia .caja2:hover p#headline {
+    margin-right: 2%;
+    -webkit-transition: margin 0.3s;
+    -moz-transition: margin 0.3s;
+  }
+
+  #taxonomia span {
+    font-size: 25px;
+    text-decoration: underline #fff;
+    color: #FFD100;
+  }
+
+  #taxonomia .sub {
+    font-size: 20px;
+    color: #FFB300;
+  }
+
+  #taxonomia .caja2 p#info2 {
+    position: absolute;
+    overflow: auto;
+    width: 40%;
+    height: 70%;
+    margin-left: 5%;
+    padding-right: 1%;
+    -webkit-transition: margin 0.3s;
+    -moz-transition: margin 0.3s;
+  }
+
+  #taxonomia .caja2:hover p#info2 {
+    margin-top: 5%;
+    margin-left: 5%;
+  }
+
+  #comportamiento {
+    background-image: url("./images/fondo1.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: top center;
+  }
+
+  #comportamiento .caja1 {
+    text-align:justify;  
+    text-justify:auto;
+    overflow: hidden;
+    float: left;
+    width: 50%;
+    height: 100%;
+    padding-left: 2%;
+    background-color: rgba(75, 75, 75, 0.9);
+    opacity: 0;
+    -webkit-transition: opacity 0.3s;
+    -moz-transition: opacity 0.3s;
+  }
+
+  #comportamiento .caja1:hover {
+    opacity: 1;
+  }
+
+  #comportamiento .caja1 p#headline {
+    display: flex;
+    justify-content: center;
+    margin-left: -900px;
+    font-size: 30px;
+    text-align: center;
+    margin-top: 70px;
+  }
+
+  #comportamiento .caja1:hover p#headline {
+    margin-left: 2%;
+    -webkit-transition: margin 0.3s;
+    -moz-transition: margin 0.3s;
+  }
+
+  #comportamiento .caja1 p#info2 {
+    overflow: auto;
+    position: absolute;
+    width: 40%;
+    height: 70%;
+    margin-left: 7%;
+    padding-right: 1%;
+    margin-top: 300px;
+    -webkit-transition: margin 0.3s;
+    -moz-transition: margin 0.3s;
+  }
+
+  #comportamiento .caja1:hover p#info2 {
+    margin-top: 5%;
+    margin-left: 5%;
+  }
+
+  #comportamiento .caja2 {
+    text-align:justify;  
+    text-justify:auto;
+    overflow: hidden;
+    float: right;
+    width: 50%;
+    height: 100%;
+    background-color: rgba(75, 75, 75, 0.9);
+    opacity: 0;
+    -webkit-transition: opacity 0.3s;
+    -moz-transition: opacity 0.3s;
+  }
+
+  #comportamiento .caja2:hover {
+    opacity: 1;
+  }
+
+  #comportamiento .caja2 p#headline {
+    display: flex;
+    margin-right: -900px;
+    justify-content: center;
+    font-size: 30px;
+    text-align: center;
+    margin-top: 70px;
+  }
+
+  #comportamiento .caja2:hover p#headline {
+    margin-right: 2%;
+    -webkit-transition: margin 0.3s;
+    -moz-transition: margin 0.3s;
+  }
+
+  #comportamiento span {
+    font-size: 25px;
+    text-decoration: underline #fff;
+    color: #FFD100;
+  }
+
+  #comportamiento .sub {
+    font-size: 20px;
+    color: #FFB300;
+  }
+
+  #comportamiento .caja2 p#info2 {
+    position: absolute;
+    overflow: auto;
+    width: 40%;
+    height: 70%;
+    margin-left: 5%;
+    padding-right: 1%;
+    -webkit-transition: margin 0.3s;
+    -moz-transition: margin 0.3s;
+  }
+
+  #comportamiento .caja2:hover p#info2 {
+    margin-top: 5%;
+    margin-left: 5%;
+  }
+
+  #habitat {
+    background-image: url("./images/habitat.png");
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: top center;
+  }
+
+  #habitat .caja1 {
+
+    text-align:justify;  
+    text-justify:auto;
+    overflow: hidden;
+    float: left;
+    width: 50%;
+    height: 100%;
+    padding-left: 2%;
+    background-color: rgba(75, 75, 75, 0.9);
+    opacity: 0;
+    -webkit-transition: opacity 0.3s;
+    -moz-transition: opacity 0.3s;
+  }
+
+  #habitat .caja1:hover {
+    opacity: 1;
+  }
+
+  #habitat .caja1 p#headline {
+    display: flex;
+    justify-content: center;
+    margin-left: -900px;
+    font-size: 30px;
+    text-align: center;
+    margin-top: 70px;
+  }
+
+  #habitat .caja1:hover p#headline {
+    margin-left: 2%;
+    -webkit-transition: margin 0.3s;
+    -moz-transition: margin 0.3s;
+  }
+
+  #habitat .caja1 p#info2 {
+    position: absolute;
+    width: 40%;
+    margin-left: 5%;
+    margin-top: 300px;
+    -webkit-transition: margin 0.3s;
+    -moz-transition: margin 0.3s;
+  }
+
+  #habitat .caja1:hover p#info2 {
+    margin-top: 5%;
+    margin-left: 5%;
+  }
+
+  #habitat .caja2 {
+    text-align:justify;  
+    text-justify:auto;
+    overflow: hidden;
+    float: right;
+    width: 50%;
+    height: 100%;
+    background-color: rgba(75, 75, 75, 0.9);
+    opacity: 0;
+    -webkit-transition: opacity 0.3s;
+    -moz-transition: opacity 0.3s;
+  }
+
+  #habitat .caja2:hover {
+    opacity: 1;
+  }
+
+  #habitat .caja2 p#headline {
+    display: flex;
+    margin-right: -900px;
+    justify-content: center;
+    font-size: 30px;
+    text-align: center;
+    margin-top: 70px;
+  }
+
+  #habitat .caja2:hover p#headline {
+    margin-right: 2%;
+    -webkit-transition: margin 0.3s;
+    -moz-transition: margin 0.3s;
+  }
+
+  #habitat .caja2 p#info2 {
+    position: absolute;
+    width: 40%;
+    margin-left: 5%;
+    margin-top: 300px;
+    -webkit-transition: margin 0.3s;
+    -moz-transition: margin 0.3s;
+  }
+
+  #habitat .caja2:hover p#info2 {
+    margin-top: 5%;
+    margin-left: 5%;
+  }
+
+  #gastronomia {
+    background-image: url("https://img.freepik.com/foto-gratis/pescados-verduras-cubiertos-sobre-fondo-negro_1220-552.jpg?size=626&ext=jpg");
+    background-repeat: no-repeat;
+    background-size: cover
+  }
+
+  #gastronomia .content {
+    text-align:justify;  
+    text-justify:auto;
+    position: relative;
+    margin: auto;
+    float: left;
+    width: 50%;
+    height: 100%;
+    margin-top: 5%;
+    margin-left: 7%;
+    margin-right: 4%
+  }
+
+  #gastronomia p {
+    left: 0;
+    position: absolute;
+    top: 30%;
+  }
+
+  #gastronomia .images {
+    position: relative;
+    float: right;
+    width: 50%;
+    height: 100%;
+  }
+
+  #gastronomia .images img {
+    position: relative;
+    display: inline-table;
+    margin: 2% 0% 0% 2%;
+    height: 100%;
+    width: 80%;
+    background-color: rgba(75, 75, 75, 0.9);
+    opacity: 1;
+    -webkit-transition: opacity 0.3s;
+    -moz-transition: opacity 0.3s;
+  }
+
+  #gastronomia .images div {
+    margin-top: 10px;
+    position: relative;
+    height: 30%;
+  }
+
+  #gastronomia .images p {
+    font-size: 30px;
+    color: #fff;
+    opacity: 0;
+    -webkit-transition: opacity 0.3s;
+    -moz-transition: opacity 0.3s;
+  }
+
+  #gastronomia .images #uno:hover {
+    opacity: 0.6;
+  }
+
+  #gastronomia .images #uno:hover+#textuno {
+    opacity: 1;
+  }
+
+  #gastronomia .images #dos:hover {
+    opacity: 0.5;
+  }
+
+  #gastronomia .images #dos:hover+#textdos {
+    opacity: 1;
+  }
+
+  #gastronomia .images #tres:hover {
+    opacity: 0.6;
+  }
+
+  #gastronomia .images #tres:hover+#texttres {
+    opacity: 1;
+  }
+
+  #gastronomia .images img.middle {
+    margin-right: 5%;
+  }
+
+  #gastronomia .images img.not {
+    margin-left: 13%;
+  }
+
+  #gastronomia .images p.middle {
+    margin-top: 25px;
+    margin-left: 20%;
+  }
+
+  #gastronomia .images p.not {
+    margin-top: 25px;
+    margin-left: 30%;
+  }
+
+
+.wrapper {
+  top: 10%;
+  left: 40%;
+  width: 300px;
+  height: 350px;
+  perspective: 900px;
+}
+
+.container {
+  position: absolute;
+  top: 0%;
+  width: 100%;
+  height: 100%;
+  transition: .5s all ease;
+  transform: rotateX(60deg) scale(0.7);
+  perspective: 900px;
+  box-shadow: 0px 20px 50px #555;
+  animation: entry 1s linear 1;
+}
+
+#c0 {
+  position: absolute;
+  top: 0%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to bottom, #eba65b 30%, #d99267 100%);
+  z-index: 300;
+  box-shadow: 0px 20px 100px #555;
+}
+
+#c1 {
+  background: linear-gradient(to bottom, #59476f 30%, #7b88d1 100%);
+  box-shadow: 0px 20px 100px #555;
+  left: 100%;
+  z-index: 0;
+}
+
+#c2 {
+  left: -100%;
+  z-index: 0;
+  background: linear-gradient(to bottom, #59476f 30%, #7b88d1 100%);
+  box-shadow: 0px 20px 100px #555;
+}
+
+.container:hover {
+  cursor: pointer;
+  transform: rotate(0deg) scale(1) translateY(10px);
+  transition: .5s all ease;
+  z-index: 400;
+}
+
+.image {
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  width: 100%;
+  height: 75%;
+}
+
+.container img {
+  position: absolute;
+  display:block;
+  margin: 0 50px 50px 40px;
+  background-position: 50% 5%;
+  width: 75%;
+  height: 100%;
+}
+
+
+
+#about span {
+  position: absolute;
+  top: 0%;
+  left: 55%;
+  border-radius: 100%;
+  background-color: #fff;
+  z-index: 10;
+}
+
+
+.story {
+  position: absolute;
+  bottom: 10%;
+  left: 0%;
+  height: 15%;
+  width: 100%;
+  z-index: 30;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+}
+
+
+
+.info {
+ margin-top: 20px;
+}
+
+#about h3 {
+  font-size: 20px;
+  text-align: center;
+  text-shadow: 0px 0px 10px #eee;
+  color: #eee;
+  letter-spacing: 2px;
+}
+
+.page {
+  position: absolute;
+  top: 80%;
+  width: 100%;
+  left: 0%;
+  height: 20%;
+  z-index: 30;
+}
+
+#about li {
+  position: absolute;
+  top: 50%;
+  list-style: none;
+  color: #111;
+}
+
+#about li:nth-child(1) {
+  left: 15%;
+  animation: simple1 1s linear infinite;
+}
+
+#about li:nth-child(2) {
+  right: 15%;
+  animation: simple 1s linear infinite;
+}
+
+@keyframes simple {
+  50% {
+    transform: translateX(10px);
+    opacity: 0.5;
+  }
+  100% {
+    transform: translateX(10px);
+    opacity: 0;
+  }
+}
+
+@keyframes simple1 {
+  50% {
+    transform: translateX(-10px);
+    opacity: 0.5;
+  }
+  100% {
+    transform: translateX(-10px);
+    opacity: 0;
+  }
+}
+
+@keyframes entry {
+  0% {
+    top: -20%;
+    opacity: 0.1;
+  }
+  100% {
+    top: 0%;
+  }
+}
+}
+
+/*---------------------------------------------------------------------------------------------------------*/
+@media screen and (max-width: 964px) and (min-width: 650px) {
+  section {
+    overflow: hidden;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  body {
+    color: rgb(218, 214, 214);
+    font-family: "Montserrat", sans-serif;
+  }
+
+  p {
+    font-size: 10px
+  }
+
+  h1 {
+    font-size: 30px;
+    font-weight: bold;
+  }
+
+  h2 {
+    font-size: 12px;
+  }
+
+  h3 {
+    font-size: 11px;
+  }
+
+  a {
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+
+  /*------------------------------------------------*/
+
+  .sidebar {
+    z-index: 100;
+    position: fixed;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #414141;
+  }
+
+  .nav-item {
+    position: relative;
+  }
+
+  .nav-item:not(:last-child) {
+    margin-bottom: 10px;
+  }
+
+  .nav-link {
+    color: #fff;
+    text-decoration: none;
+    font-size: 20px;
+    font-family: "Montserrat", sans-serif;
+  }
+
+  .nav-link i {
+    width: 45px;
+    height: 45px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #414141;
+    transition: all 0.3s;
+  }
+
+  .nav-link .title {
+    position: absolute;
+    background-color: #414141;
+    height: 100%;
+    padding-right: 20px;
+    padding-left: 20px;
+    line-height: 45px;
+    transform: translateX(-100%);
+    transition: all 0.3s;
+    z-index: -1;
+  }
+
+  .nav-item:hover i {
+    transform: scale(1.1);
+    box-shadow: 0px 0 20px rgba(0, 0, 0, 0.8);
+  }
+
+  .nav-item:hover .title {
+    transform: translateX(0);
+  }
+
+
+  /*------------------------------------*/
+
+  #logo span {
+    position: absolute;
+    top: 6%;
+    left: 13%;
+  }
+
+  #logo img {
+    position: absolute;
+    top: 3.5%;
+    left: 7%;
+    width: 50px;
+    height: 50px;
+  }
+
+  #main {
+    background-image: url(https://www.depeces.com/wp-content/uploads/2019/04/Ojos-de-la-langosta-mantis.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: top center;
+  }
+
+  #main h1 {
+    text-align: center;
+    margin-left: 5%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    font-size: 40px;
+  }
+
+  #main iframe {
+    position: absolute;
+    bottom: 5%;
+    right: 5%;
+    width: 40%;
+    height: 40%;
+  }
+
+  #main_text {
+    text-align: center;
+    left: 15%;
+    top: 30%;
+    position: absolute;
+    width: 40%;
+  }
+
+  #main p {
+    font-size: 20px;
+  }
+
+  #main ul {
+    padding: 0;
+    list-style-type: none;
+    position: absolute;
+    bottom: 20%;
+    left: 15%;
+  }
+
+  #main li {
+    font-size: 25px;
+    width: 8em;
+    height: 2em;
+    color: orange;
+    border-left: 0.08em solid;
+    position: relative;
+    margin-top: 0.8em;
+    cursor: pointer;
+  }
+
+  #main li::before,
+  #main li::after {
+    content: '';
+    position: absolute;
+    width: inherit;
+    border-left: inherit;
+    z-index: -1;
+  }
+
+  #main li::before {
+    height: 80%;
+    top: 10%;
+    left: calc(-0.15em - 0.08em * 2);
+    filter: brightness(0.8);
+  }
+
+  #main li::after {
+    height: 60%;
+    top: 20%;
+    left: calc(-0.15em * 2 - 0.08em * 3);
+    filter: brightness(0.6);
+  }
+
+  #main li span {
+    color: orange;
+    position: relative;
+    height: 120%;
+    top: -10%;
+    box-sizing: border-box;
+    border: 0.08em solid;
+    background-color: #333;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: sans-serif;
+    text-transform: capitalize;
+    transform: translateX(calc(-0.15em * 3 - 0.08em * 2));
+    transition: 0.3s;
+  }
+
+  #main li:hover span {
+    transform: translateX(0.15em);
+  }
+
+  #investigacion {
+    display: grid;
+    background-image: url("./images/justin.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  #investigacion .content {
+    text-align:justify;  
+    text-justify:auto;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    top: 15%;
+  }
+
+  #investigacion img {
+    display: none;
+    width: 20%;
+    margin-right: 5%;
+    margin-left: 5%;
+  }
+
+  #investigacion p {
+  text-shadow: 2px 2px 3px rgb(0, 0, 0);
+
+    position: relative;
+    width: 80%;
+    margin-left: 10%;
+    font-size: 15px;
+  }
+
+  #investigacion .caja1 {
+    background-image: url("./images/ojos.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: auto;
+    display: table;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(75, 75, 75);
+    opacity: 0;
+    -webkit-transition: opacity 0.3s;
+    -moz-transition: opacity 0.3s;
+  }
+
+  #investigacion .caja2 {
+    background-image: url("./images/pinzas.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: auto;
+    display: table;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(75, 75, 75);
+    opacity: 0;
+    -webkit-transition: opacity 0.3s;
+    -moz-transition: opacity 0.3s;
+  }
+
+  #investigacion .caja2:hover {
+    opacity: 1;
+  }
+
+  #investigacion .caja1:hover {
+    opacity: 1;
+  }
+  #taxonomia {
+    display: block;
+    height: 200vh;
+  }
+  #taxonomia .fondo1 {
+    background-image: url("./images/taxonomia.jpg");
+    background-size: 50vh;
+    background-attachment: fixed;
+    background-position: 50% 5%;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 50%;
+    z-index: 2;
+  }
+
+  #taxonomia .fondo2 {
+    background-image: url("./images/especies.png");
+    background-size: 90vh;
+    background-attachment: fixed;
+    background-position: 90% 10%;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 50%;
+    z-index: 2;
+  }
+
+  #taxonomia .caja1 {
+    margin: auto;
+    justify-items: center;
+    overflow: hidden;
+    padding-left: 4%;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(2, 2, 2, 0.9);
+    opacity: 0;
+    -webkit-transition: opacity 0.3s;
+    -moz-transition: opacity 0.3s;
+  }
+
+  #taxonomia .caja1:hover {
+    opacity: 1;
+  }
+
+  #taxonomia .caja1 p#headline {
+    display: flex;
+    justify-content: center;
+    margin-left: -900px;
+    font-size: 30px;
+    text-align: center;
+    margin-top: 70px;
+  }
+
+  #taxonomia .caja1:hover p#headline {
+    margin-left: 2%;
+    -webkit-transition: margin 0.3s;
+    -moz-transition: margin 0.3s;
+  }
+
+  #taxonomia .caja1 p#info2 {
+    font-size: 15px;
+    line-height: 1.5;
+    position: absolute;
+    width: 70%;
+    margin-top: 300px;
+    -webkit-transition: margin 0.3s;
+    -moz-transition: margin 0.3s;
+  }
+
+  #taxonomia .caja1:hover p#info2 {
+    margin-top: 15%;
+    margin-left: 15%;
+  }
+
+  #taxonomia .caja2 {
+    text-align:justify;  
+    text-justify:auto;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(2, 2, 2, 0.9);
+    opacity: 0;
+    -webkit-transition: opacity 0.3s;
+    -moz-transition: opacity 0.3s;
+  }
+
+  #taxonomia .caja2:hover {
+    opacity: 1;
+  }
+
+  #taxonomia .caja2 p#headline {
+    display: flex;
+    margin-right: -900px;
+    justify-content: center;
+    font-size: 30px;
+    text-align: center;
+    margin-top: 70px;
+  }
+
+  #taxonomia .caja2:hover p#headline {
+    margin-right: 2%;
+    -webkit-transition: margin 0.3s;
+    -moz-transition: margin 0.3s;
+  }
+
+  #taxonomia span {
+    font-size: 25px;
+    text-decoration: underline #fff;
+    color: #FFD100;
+  }
+
+  #taxonomia .sub {
+    font-size: 20px;
+    color: #FFB300;
+  }
+
+  #taxonomia .caja2 p#info2 {
+    position: absolute;
+    overflow: auto;
+    font-size: 15px;
+    width: 70%;
+    height: 70%;
+    margin-left: 5%;
+    padding-right: 1%;
+    -webkit-transition: margin 0.3s;
+    -moz-transition: margin 0.3s;
+  }
+
+  #taxonomia .caja2:hover p#info2 {
+    margin-top: 10%;
+    margin-left: 15%;
+  }
+  #comportamiento {
+    display: grid;
+    background-image: url("./images/fondo1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  #comportamiento img {
+    display: none;
+    width: 20%;
+    margin-right: 5%;
+    margin-left: 5%;
+  }
+
+  #comportamiento p {
+  text-shadow: 2px 2px 3px rgb(0, 0, 0);
+    position: relative;
+    width: 80%;
+    margin-left: 10%;
+    font-size: 15px;
+  }
+  #comportamiento .caja1 p#headline {
+    display: flex;
+    justify-content: center;
+    margin-left: -900px;
+    font-size: 30px;
+    text-align: center;
+    padding-top: 30px;
+  }
+
+  #comportamiento .caja1:hover p#headline {
+    margin-left: 7%;
+    margin-bottom: 2%;
+    -webkit-transition: margin 0.3s;
+    -moz-transition: margin 0.3s;
+  }
+
+  #comportamiento .caja2 p#headline {
+    display: flex;
+    justify-content: center;
+    margin-left: -900px;
+    font-size: 30px;
+    text-align: center;
+    padding-top: 30px;
+  }
+
+  #comportamiento .caja2:hover p#headline {
+    margin-left: 7%;
+    margin-bottom: 2%;
+    -webkit-transition: margin 0.3s;
+    -moz-transition: margin 0.3s;
+  }
+  #comportamiento .caja1 {
+    margin: auto;
+    display: table;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(75, 75, 75, 0.9);
+    opacity: 0;
+    -webkit-transition: opacity 0.3s;
+    -moz-transition: opacity 0.3s;
+  }
+  #comportamiento span {
+    font-size: 25px;
+    text-decoration: underline #fff;
+    color: #FFD100;
+  }
+
+  #comportamiento .sub {
+    font-size: 20px;
+    color: #FFB300;
+  }
+  #comportamiento .caja2 {
+    margin: auto;
+    display: table;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(75, 75, 75, 0.9);
+    opacity: 0;
+    -webkit-transition: opacity 0.3s;
+    -moz-transition: opacity 0.3s;
+  }
+
+  #comportamiento .caja2 p#info2 {
+    overflow: auto;
+    width: 80%;
+    height: 70%;
+    margin-left: 5%;
+    padding-right: 1%;
+    -webkit-transition: margin 0.3s;
+    -moz-transition: margin 0.3s;
+  }
+  #comportamiento .caja1 p#info2 {
+    overflow: auto;
+    width: 80%;
+    height: 70%;
+    margin-left: 5%;
+    padding-right: 1%;
+    -webkit-transition: margin 0.3s;
+    -moz-transition: margin 0.3s;
+  }
+
+  #comportamiento .caja2:hover p#info2 {
+    padding-top: 5%;
+    margin-left: 10%;
+    padding-bottom: 2%;
+  }
+  #comportamiento .caja1:hover p#info2 {
+    margin-left: 10%;
+  }
+
+  #comportamiento .caja2:hover {
+    opacity: 1;
+  }
+
+  #comportamiento .caja1:hover {
+    opacity: 1;
+  }
+
+  #habitat {
+    display: grid;
+    background-image: url("./images/habitat.png");
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: top center;
+  }
+  #habitat p {
+    font-size: 15px;
+  }
+  #habitat .caja1 {
+    margin: auto;
+    display: table;
+    text-align:justify;  
+    width: 100%;
+    height: 100%;
+    padding-left: 2%;
+    background-color: rgba(75, 75, 75, 0.9);
+    opacity: 0;
+    -webkit-transition: opacity 0.3s;
+    -moz-transition: opacity 0.3s;
+  }
+
+  #habitat .caja1:hover {
+    opacity: 1;
+  }
+
+  #habitat .caja1 p#headline {
+    display: flex;
+    justify-content: center;
+    margin-left: -900px;
+    font-size: 30px;
+    text-align: center;
+    margin-top: 70px;
+  }
+
+  #habitat .caja1:hover p#headline {
+    margin-left: 2%;
+    -webkit-transition: margin 0.3s;
+    -moz-transition: margin 0.3s;
+  }
+
+  #habitat .caja1 p#info2 {
+    overflow: auto;
+    width: 80%;
+    height: 70%;
+    margin-left: 5%;
+    padding-right: 1%;
+    -webkit-transition: margin 0.3s;
+    -moz-transition: margin 0.3s;
+  }
+
+  #habitat .caja1:hover p#info2 {
+    margin-top: 5%;
+    margin-left: 10%;
+  }
+
+  #habitat .caja2 {
+    display: table;
+    text-align:justify;  
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(75, 75, 75, 0.9);
+    opacity: 0;
+    -webkit-transition: opacity 0.3s;
+    -moz-transition: opacity 0.3s;
+  }
+
+  #habitat .caja2:hover {
+    opacity: 1;
+  }
+
+  #habitat .caja2 p#headline {
+    display: flex;
+    justify-content: center;
+    font-size: 30px;
+    text-align: center;
+    margin-top: 70px;
+  }
+
+  #habitat .caja2:hover p#headline {
+    margin-right: 2%;
+    -webkit-transition: margin 0.3s;
+    -moz-transition: margin 0.3s;
+  }
+
+  #habitat .caja2 p#info2 {
+    overflow: auto;
+    width: 80%;
+    height: 70%;
+    margin-left: 5%;
+    padding-right: 1%;
+    -webkit-transition: margin 0.3s;
+    -moz-transition: margin 0.3s;
+  }
+
+  #habitat .caja2:hover p#info2 {
+    margin-top: 5%;
+    margin-left: 10%;
+  }
+
+  #gastronomia {
+    background-image: url("https://img.freepik.com/foto-gratis/pescados-verduras-cubiertos-sobre-fondo-negro_1220-552.jpg?size=626&ext=jpg");
+    background-repeat: no-repeat;
+    background-size: cover
+  }
+
+  #gastronomia .content {
+    text-align:justify;  
+    text-justify:auto;
+    position: relative;
+    margin: auto;
+    float: left;
+    width: 50%;
+    height: 30%;
+    margin-left: 10%;
+    margin-right: 4%;
+  }
+
+  #gastronomia p {
+    left: 0;
+    position: absolute;
+    top: 30%;
+    font-size: 15px;
+  }
+
+  #gastronomia .images {
+    position: relative;
+    float: right;
+    width: 50%;
+    height: 100%;
+  }
+
+  #gastronomia .images img {
+    position: relative;
+    display: inline-table;
+    margin: 2% 0% 0% 2%;
+    height: 100%;
+    width: 80%;
+    background-color: rgba(75, 75, 75, 0.9);
+    opacity: 1;
+    -webkit-transition: opacity 0.3s;
+    -moz-transition: opacity 0.3s;
+  }
+
+  #gastronomia .images div {
+    margin-top: 10px;
+    position: relative;
+    height: 30%;
+  }
+
+  #gastronomia .images p {
+    font-size: 30px;
+    color: #fff;
+    opacity: 0;
+    -webkit-transition: opacity 0.3s;
+    -moz-transition: opacity 0.3s;
+  }
+
+  #gastronomia .images #uno:hover {
+    opacity: 0.6;
+  }
+
+  #gastronomia .images #uno:hover+#textuno {
+    opacity: 1;
+  }
+
+  #gastronomia .images #dos:hover {
+    opacity: 0.5;
+  }
+
+  #gastronomia .images #dos:hover+#textdos {
+    opacity: 1;
+  }
+
+  #gastronomia .images #tres:hover {
+    opacity: 0.6;
+  }
+
+  #gastronomia .images #tres:hover+#texttres {
+    opacity: 1;
+  }
+
+  #gastronomia .images img.middle {
+    margin-right: 5%;
+  }
+
+  #gastronomia .images img.not {
+    margin-right: 70%;
+    width: 100%;
+  }
+
+  #gastronomia .images p.middle {
+    margin-top: 25px;
+    margin-left: 20%;
+  }
+
+  #gastronomia .images p.not {
+    margin-top: 25px;
+    margin-left: 30%;
+  }
+
+#about {
+  height: 120vh;
+}
+.wrapper {
+  top: 10%;
+  left: 40%;
+  width: 300px;
+  height: 350px;
+  perspective: 900px;
+}
+
+.container {
+  position: absolute;
+  top: 0%;
+  width: 100%;
+  height: 100%;
+  transition: .5s all ease;
+  transform: rotateX(60deg) scale(0.7);
+  perspective: 900px;
+  box-shadow: 0px 20px 50px #555;
+  animation: entry 1s linear 1;
+}
+
+#c0 {
+  position: absolute;
+  top: 0%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to bottom, #eba65b 30%, #d99267 100%);
+  z-index: 300;
+  box-shadow: 0px 20px 100px #555;
+}
+
+#c1 {
+  top: -70%;
+  background: linear-gradient(to bottom, #59476f 30%, #7b88d1 100%);
+  box-shadow: 0px 20px 100px #555;
+  z-index: 0;
+}
+
+#c2 {
+  top: 70%;
+  z-index: 0;
+  background: linear-gradient(to bottom, #59476f 30%, #7b88d1 100%);
+  box-shadow: 0px 20px 100px #555;
+}
+
+.container:hover {
+  cursor: pointer;
+  transform: rotate(0deg) scale(1) translateY(10px);
+  transition: .5s all ease;
+  z-index: 400;
+}
+
+.image {
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  width: 100%;
+  height: 75%;
+}
+
+.container img {
+  position: absolute;
+  display:block;
+  margin: 0 50px 50px 40px;
+  background-position: 50% 5%;
+  width: 75%;
+  height: 100%;
+}
+
+
+
+#about span {
+  position: absolute;
+  top: 0%;
+  left: 55%;
+  border-radius: 100%;
+  background-color: #fff;
+  z-index: 10;
+}
+
+
+.story {
+  position: absolute;
+  bottom: 10%;
+  left: 0%;
+  height: 15%;
+  width: 100%;
+  z-index: 30;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+}
+
+
+
+.info {
+ margin-top: 20px;
+}
+
+#about h3 {
+  font-size: 20px;
+  text-align: center;
+  text-shadow: 0px 0px 10px #eee;
+  color: #eee;
+  letter-spacing: 2px;
+}
+
+.page {
+  position: absolute;
+  top: 80%;
+  width: 100%;
+  left: 0%;
+  height: 20%;
+  z-index: 30;
+}
+
+#about li {
+  position: absolute;
+  top: 50%;
+  list-style: none;
+  color: #111;
+}
+
+#about li:nth-child(1) {
+  left: 15%;
+  animation: simple1 1s linear infinite;
+}
+
+#about li:nth-child(2) {
+  right: 15%;
+  animation: simple 1s linear infinite;
+}
+
+@keyframes simple {
+  50% {
+    transform: translateX(10px);
+    opacity: 0.5;
+  }
+  100% {
+    transform: translateX(10px);
+    opacity: 0;
+  }
+}
+
+@keyframes simple1 {
+  50% {
+    transform: translateX(-10px);
+    opacity: 0.5;
+  }
+  100% {
+    transform: translateX(-10px);
+    opacity: 0;
+  }
+}
+
+@keyframes entry {
+  0% {
+    top: -20%;
+    opacity: 0.1;
+  }
+  100% {
+    top: 0%;
+  }
+}
+}
+
+/*---------------------------------------------------------------------------------------------------------*/
+@media screen and (max-width: 650px) {
+  section {
+    overflow: hidden;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  body {
+    color: rgb(218, 214, 214);
+    font-family: "Montserrat", sans-serif;
+  }
+
+  p {
+    font-size: 10px
+  }
+
+  h1 {
+    font-size: 30px;
+    font-weight: bold;
+  }
+
+  h2 {
+    font-size: 12px;
+  }
+
+  h3 {
+    font-size: 11px;
+  }
+
+  a {
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+
+  /*------------------------------------------------*/
+
+  .sidebar {
+    z-index: 100;
+    position: fixed;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #414141;
+  }
+
+  .nav-item {
+    position: relative;
+  }
+
+  .nav-item:not(:last-child) {
+    margin-bottom: 5px;
+  }
+
+  .nav-link {
+    color: #fff;
+    text-decoration: none;
+    font-size: 15px;
+    font-family: "Montserrat", sans-serif;
+  }
+
+  .nav-link i {
+    width: 30px;
+    height: 30px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #414141;
+    transition: all 0.3s;
+  }
+
+  .nav-link .title {
+    position: absolute;
+    background-color: #414141;
+    height: 100%;
+    padding-right: 20px;
+    padding-left: 20px;
+    line-height: 30px;
+    transform: translateX(-100%);
+    transition: all 0.3s;
+    z-index: -1;
+  }
+
+  .nav-item:hover i {
+    transform: scale(1.1);
+    box-shadow: 0px 0 20px rgba(0, 0, 0, 0.8);
+  }
+
+  .nav-item:hover .title {
+    transform: translateX(0);
+  }
+
+
+  /*------------------------------------*/
+
+  #logo span {
+    position: absolute;
+    top: 6%;
+    left: 20%;
+  }
+
+  #logo img {
+    position: absolute;
+    top: 3.5%;
+    left: 7%;
+    width: 50px;
+    height: 50px;
+  }
+
+  #main {
+    background-image: url(https://www.depeces.com/wp-content/uploads/2019/04/Ojos-de-la-langosta-mantis.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: top center;
+  }
+
+  #main h1 {
+    text-align: center;
+    margin-left: 5%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    font-size: 40px;
+  }
+
+  #main iframe {
+    display: none;
+   
+  }
+
+  #main_text {
+    text-align: center;
+    left: 15%;
+    top: 15%;
+    position: absolute;
+    width: 70%;
+  }
+
+  #main p {
+    font-size: 20px;
+  }
+
+  #main ul {
+    padding: 0;
+    list-style-type: none;
+    position: absolute;
+    bottom: 20%;
+    left: 25%;
+  }
+
+  #main li {
+    font-size: 25px;
+    width: 8em;
+    height: 2em;
+    color: orange;
+    border-left: 0.08em solid;
+    position: relative;
+    margin-top: 0.8em;
+    cursor: pointer;
+  }
+
+  #main li::before,
+  #main li::after {
+    content: '';
+    position: absolute;
+    width: inherit;
+    border-left: inherit;
+    z-index: -1;
+  }
+
+  #main li::before {
+    height: 80%;
+    top: 10%;
+    left: calc(-0.15em - 0.08em * 2);
+    filter: brightness(0.8);
+  }
+
+  #main li::after {
+    height: 60%;
+    top: 20%;
+    left: calc(-0.15em * 2 - 0.08em * 3);
+    filter: brightness(0.6);
+  }
+
+  #main li span {
+    color: orange;
+    position: relative;
+    height: 120%;
+    top: -10%;
+    box-sizing: border-box;
+    border: 0.08em solid;
+    background-color: #333;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: sans-serif;
+    text-transform: capitalize;
+    transform: translateX(calc(-0.15em * 3 - 0.08em * 2));
+    transition: 0.3s;
+  }
+
+  #main li:hover span {
+    transform: translateX(0.15em);
+  }
+
+  #investigacion {
+    display: grid;
+    background-image: url("./images/justin.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  #investigacion .content {
+    overflow: auto;
+    text-align:justify;  
+    text-justify:auto;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    top: 15%;
+    height: 70%;
+  }
+
+  #investigacion img {
+    display: none;
+    width: 20%;
+    margin-right: 5%;
+    margin-left: 5%;
+  }
+
+  #investigacion p {
+    text-shadow: 2px 2px 3px rgb(0, 0, 0);
+    position: relative;
+    width: 80%;
+    margin-left: 13%;
+    font-size: 15px;
+  }
+
+  #investigacion .caja1 {
+    background-image: url("./images/ojos.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: auto;
+    display: table;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(75, 75, 75);
+    opacity: 0;
+    -webkit-transition: opacity 0.3s;
+    -moz-transition: opacity 0.3s;
+  }
+
+  #investigacion .caja2 {
+    background-image: url("./images/pinzas.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: auto;
+    display: table;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(75, 75, 75);
+    opacity: 0;
+    -webkit-transition: opacity 0.3s;
+    -moz-transition: opacity 0.3s;
+  }
+
+  #investigacion .caja2:hover {
+    opacity: 1;
+  }
+
+  #investigacion .caja1:hover {
+    opacity: 1;
+  }
+  #taxonomia {
+    display: block;
+    height: 200vh;
+  }
+  #taxonomia .fondo1 {
+    background-image: url("./images/taxonomia.jpg");
+    background-size: 50vh;
+    background-attachment: fixed;
+    background-position: 50% 5%;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 50%;
+    z-index: 2;
+  }
+
+  #taxonomia .fondo2 {
+    background-image: url("./images/especies.png");
+    background-size: 90vh;
+    background-attachment: fixed;
+    background-position: 90% 10%;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 50%;
+    z-index: 2;
+  }
+
+  #taxonomia .caja1 {
+    margin: auto;
+    justify-items: center;
+    overflow: hidden;
+    padding-left: 4%;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(2, 2, 2, 0.9);
+    opacity: 0;
+    -webkit-transition: opacity 0.3s;
+    -moz-transition: opacity 0.3s;
+  }
+
+  #taxonomia .caja1:hover {
+    opacity: 1;
+  }
+
+  #taxonomia .caja1 p#headline {
+    display: flex;
+    justify-content: center;
+    margin-left: -900px;
+    font-size: 30px;
+    text-align: center;
+    margin-top: 70px;
+  }
+
+  #taxonomia .caja1:hover p#headline {
+    margin-left: 2%;
+    -webkit-transition: margin 0.3s;
+    -moz-transition: margin 0.3s;
+  }
+
+  #taxonomia .caja1 p#info2 {
+    overflow: auto;
+    font-size: 15px;
+    line-height: 1.5;
+    position: absolute;
+    width: 70%;
+    margin-top: 300px;
+    -webkit-transition: margin 0.3s;
+    -moz-transition: margin 0.3s;
+  }
+
+  #taxonomia .caja1:hover p#info2 {
+    margin-top: 15%;
+    margin-left: 15%;
+  }
+
+  #taxonomia .caja2 {
+    text-align:justify;  
+    text-justify:auto;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(2, 2, 2, 0.9);
+    opacity: 0;
+    -webkit-transition: opacity 0.3s;
+    -moz-transition: opacity 0.3s;
+  }
+
+  #taxonomia .caja2:hover {
+    opacity: 1;
+  }
+
+  #taxonomia .caja2 p#headline {
+    display: flex;
+    margin-right: -900px;
+    justify-content: center;
+    font-size: 30px;
+    text-align: center;
+    margin-top: 70px;
+  }
+
+  #taxonomia .caja2:hover p#headline {
+    margin-right: 2%;
+    -webkit-transition: margin 0.3s;
+    -moz-transition: margin 0.3s;
+  }
+
+  #taxonomia span {
+    font-size: 25px;
+    text-decoration: underline #fff;
+    color: #FFD100;
+  }
+
+  #taxonomia .sub {
+    font-size: 20px;
+    color: #FFB300;
+  }
+
+  #taxonomia .caja2 p#info2 {
+    position: absolute;
+    overflow: auto;
+    font-size: 15px;
+    width: 70%;
+    height: 70%;
+    margin-left: 7%;
+    padding-right: 1%;
+    -webkit-transition: margin 0.3s;
+    -moz-transition: margin 0.3s;
+  }
+
+  #taxonomia .caja2:hover p#info2 {
+    margin-top: 10%;
+    margin-left: 17%;
+  }
+  #comportamiento {
+    display: grid;
+    background-image: url("./images/fondo1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 63%;
+  }
+
+  #comportamiento img {
+    display: none;
+    width: 20%;
+    margin-right: 5%;
+    margin-left: 5%;
+  }
+
+  #comportamiento p {
+    overflow: auto;
+    text-shadow: 2px 2px 3px rgb(0, 0, 0);
+    position: relative;
+    width: 80%;
+    margin-left: 10%;
+    font-size: 15px;
+  }
+  #comportamiento .caja1 p#headline {
+    display: flex;
+    justify-content: center;
+    margin-left: -900px;
+    font-size: 25px;
+    text-align: center;
+    padding-top: 30px;
+  }
+
+  #comportamiento .caja1:hover p#headline {
+    margin-left:11%;
+    margin-bottom: 2%;
+    -webkit-transition: margin 0.3s;
+    -moz-transition: margin 0.3s;
+  }
+
+  #comportamiento .caja2 p#headline {
+    display: flex;
+    justify-content: center;
+    margin-left: -900px;
+    font-size: 25px;
+    text-align: center;
+    padding-top: 30px;
+  }
+
+  #comportamiento .caja2:hover p#headline {
+    margin-left: 9%;
+    margin-bottom: 2%;
+    -webkit-transition: margin 0.3s;
+    -moz-transition: margin 0.3s;
+  }
+  #comportamiento .caja1 {
+    margin: auto;
+    display: table;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(75, 75, 75, 0.9);
+    opacity: 0;
+    -webkit-transition: opacity 0.3s;
+    -moz-transition: opacity 0.3s;
+  }
+  #comportamiento span {
+    font-size: 25px;
+    text-decoration: underline #fff;
+    color: #FFD100;
+  }
+
+  #comportamiento .sub {
+    font-size: 20px;
+    color: #FFB300;
+  }
+  #comportamiento .caja2 {
+    margin: auto;
+    display: table;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(75, 75, 75, 0.9);
+    opacity: 0;
+    -webkit-transition: opacity 0.3s;
+    -moz-transition: opacity 0.3s;
+  }
+
+  #comportamiento .caja2 p#info2 {
+    overflow: auto;
+    width: 80%;
+    height: 70%;
+    margin-left: 5%;
+    padding-right: 1%;
+    -webkit-transition: margin 0.3s;
+    -moz-transition: margin 0.3s;
+  }
+  #comportamiento .caja1 p#info2 {
+    overflow: auto;
+    width: 80%;
+    height: 70%;
+    margin-left: 5%;
+    padding-right: 1%;
+    -webkit-transition: margin 0.3s;
+    -moz-transition: margin 0.3s;
+  }
+
+  #comportamiento .caja2:hover p#info2 {
+    padding-top: 5%;
+    margin-left: 13%;
+    padding-bottom: 2%;
+  }
+  #comportamiento .caja1:hover p#info2 {
+    margin-left: 13%;
+  }
+
+  #comportamiento .caja2:hover {
+    opacity: 1;
+  }
+
+  #comportamiento .caja1:hover {
+    opacity: 1;
+  }
+
+  #habitat {
+    display: grid;
+    background-image: url("./images/habitat.png");
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: top center;
+  }
+  #habitat p {
+    font-size: 15px;
+  }
+  #habitat .caja1 {
+    margin: auto;
+    display: table;
+    text-align:justify;  
+    width: 100%;
+    height: 100%;
+    padding-left: 2%;
+    background-color: rgba(75, 75, 75, 0.9);
+    opacity: 0;
+    -webkit-transition: opacity 0.3s;
+    -moz-transition: opacity 0.3s;
+  }
+
+  #habitat .caja1:hover {
+    opacity: 1;
+  }
+
+  #habitat .caja1 p#headline {
+    display: flex;
+    justify-content: center;
+    margin-left: -900px;
+    font-size: 30px;
+    text-align: center;
+    margin-top: 70px;
+  }
+
+  #habitat .caja1:hover p#headline {
+    margin-left: 2%;
+    -webkit-transition: margin 0.3s;
+    -moz-transition: margin 0.3s;
+  }
+
+  #habitat .caja1 p#info2 {
+    overflow: auto;
+    width: 80%;
+    height: 50%;
+    margin-left: 5%;
+    padding-right: 1%;
+    -webkit-transition: margin 0.3s;
+    -moz-transition: margin 0.3s;
+  }
+
+  #habitat .caja1:hover p#info2 {
+    margin-top: 5%;
+    margin-left: 12%;
+  }
+
+  #habitat .caja2 {
+    display: table;
+    text-align:justify;  
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(75, 75, 75, 0.9);
+    opacity: 0;
+    -webkit-transition: opacity 0.3s;
+    -moz-transition: opacity 0.3s;
+  }
+
+  #habitat .caja2:hover {
+    opacity: 1;
+  }
+
+  #habitat .caja2 p#headline {
+    display: flex;
+    justify-content: center;
+    font-size: 30px;
+    text-align: center;
+    margin-top: 70px;
+  }
+
+  #habitat .caja2:hover p#headline {
+    margin-left: 2%;
+    margin-right: 2%;
+    -webkit-transition: margin 0.3s;
+    -moz-transition: margin 0.3s;
+  }
+
+  #habitat .caja2 p#info2 {
+    overflow: auto;
+    width: 80%;
+    height: 50%;
+    margin-left: 5%;
+    padding-right: 1%;
+    -webkit-transition: margin 0.3s;
+    -moz-transition: margin 0.3s;
+  }
+
+  #habitat .caja2:hover p#info2 {
+    margin-top: 5%;
+    margin-left: 12%;
+  }
+
+  #gastronomia {
+    background-image: url("https://img.freepik.com/foto-gratis/pescados-verduras-cubiertos-sobre-fondo-negro_1220-552.jpg?size=626&ext=jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 80% 5%;
+  }
+
+  #gastronomia .content {
+    text-align:justify;  
+    text-justify:auto;
+    position: relative;
+    margin: auto;
+    width: 70%;
+    height: 50%;
+    margin-left: 10%;
+    margin-right: 4%;
+  }
+
+  #gastronomia p {
+    left: 0;
+    position: absolute;
+    top: 20%;
+    font-size: 15px;
+  }
+
+  #gastronomia .images img {
+    display: none;
+  }
+
+  #gastronomia .images div {
+    margin-top: 10px;
+    position: relative;
+    height: 30%;
+  }
+
+  #gastronomia .images p {
+    display: none;
+  }
+
+
+#about {
+  height: 130vh;
+}
+.wrapper {
+  top: 10%;
+  left: 40%;
+  width: 300px;
+  height: 350px;
+  perspective: 900px;
+}
+
+.container {
+  position: absolute;
+  top: 0%;
+  width: 100%;
+  height: 100%;
+  transition: .5s all ease;
+  transform: rotateX(60deg) scale(0.7);
+  perspective: 900px;
+  box-shadow: 0px 20px 50px #555;
+  animation: entry 1s linear 1;
+}
+
+#c0 {
+  position: absolute;
+  top: 0%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to bottom, #eba65b 30%, #d99267 100%);
+  z-index: 300;
+  box-shadow: 0px 20px 100px #555;
+}
+
+#c1 {
+  top: -70%;
+  background: linear-gradient(to bottom, #59476f 30%, #7b88d1 100%);
+  box-shadow: 0px 20px 100px #555;
+  z-index: 0;
+}
+
+#c2 {
+  top: 70%;
+  z-index: 0;
+  background: linear-gradient(to bottom, #59476f 30%, #7b88d1 100%);
+  box-shadow: 0px 20px 100px #555;
+}
+
+.container:hover {
+  cursor: pointer;
+  transform: rotate(0deg) scale(1) translateY(10px);
+  transition: .5s all ease;
+  z-index: 400;
+}
+
+.image {
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  width: 100%;
+  height: 75%;
+}
+
+.container img {
+  position: absolute;
+  display:block;
+  margin: 0 50px 50px 40px;
+  background-position: 50% 5%;
+  width: 75%;
+  height: 100%;
+}
+
+
+
+#about span {
+  position: absolute;
+  top: 0%;
+  left: 55%;
+  border-radius: 100%;
+  background-color: #fff;
+  z-index: 10;
+}
+
+
+.story {
+  position: absolute;
+  bottom: 10%;
+  left: 0%;
+  height: 15%;
+  width: 100%;
+  z-index: 30;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+}
+
+
+
+.info {
+ margin-top: 20px;
+}
+
+#about h3 {
+  font-size: 20px;
+  text-align: center;
+  text-shadow: 0px 0px 10px #eee;
+  color: #eee;
+  letter-spacing: 2px;
+}
+
+.page {
+  position: absolute;
+  top: 80%;
+  width: 100%;
+  left: 0%;
+  height: 20%;
+  z-index: 30;
+}
+
+#about li {
+  position: absolute;
+  top: 50%;
+  list-style: none;
+  color: #111;
+}
+
+#about li:nth-child(1) {
+  left: 15%;
+  animation: simple1 1s linear infinite;
+}
+
+#about li:nth-child(2) {
+  right: 15%;
+  animation: simple 1s linear infinite;
+}
+
+@keyframes simple {
+  50% {
+    transform: translateX(10px);
+    opacity: 0.5;
+  }
+  100% {
+    transform: translateX(10px);
+    opacity: 0;
+  }
+}
+
+@keyframes simple1 {
+  50% {
+    transform: translateX(-10px);
+    opacity: 0.5;
+  }
+  100% {
+    transform: translateX(-10px);
+    opacity: 0;
+  }
+}
+
+@keyframes entry {
+  0% {
+    top: -20%;
+    opacity: 0.1;
+  }
+  100% {
+    top: 0%;
+  }
 }
-
-#taxonomia .sub {
-	font-size: 20px;
-	color: #FFB300;
-}
-
-#taxonomia .caja2 p#info2 {
-	position: absolute;
-	overflow: auto;
-	width: 40%;
-	height: 70%;
-	margin-left: 5%;
-  padding-right: 1%;
-	-webkit-transition: margin 0.3s;
-	-moz-transition: margin 0.3s;
-}
-
-#taxonomia .caja2:hover p#info2 {
-	margin-top: 5%;
-	margin-left: 5%;
-}
-
-#comportamiento {
-	background-image: url("./images/fondo1.jpg");
-	background-size: cover;
-	background-attachment: fixed;
-	background-position: top center;
-}
-
-#comportamiento .caja1 {
-  text-align:justify;  
-  text-justify:auto;
-	overflow: hidden;
-	float: left;
-	width: 50%;
-	height: 100%;
-	background-color: rgba(75, 75, 75, 0.9);
-	opacity: 0;
-	-webkit-transition: opacity 0.3s;
-	-moz-transition: opacity 0.3s;
-}
-
-#comportamiento .caja1:hover {
-	opacity: 1;
-}
-
-#comportamiento .caja1 p#headline {
-	display: flex;
-	justify-content: center;
-	margin-left: -900px;
-	font-size: 30px;
-	text-align: center;
-	margin-top: 70px;
-}
-
-#comportamiento .caja1:hover p#headline {
-	margin-left: 2%;
-	-webkit-transition: margin 0.3s;
-	-moz-transition: margin 0.3s;
-}
-
-#comportamiento .caja1 p#info2 {
-	position: absolute;
-	width: 40%;
-	margin-left: 5%;
-	margin-top: 300px;
-	-webkit-transition: margin 0.3s;
-	-moz-transition: margin 0.3s;
-}
-
-#comportamiento .caja1:hover p#info2 {
-	margin-top: 5%;
-	margin-left: 5%;
-}
-
-#comportamiento .caja2 {
-  text-align:justify;  
-  text-justify:auto;
-	overflow: hidden;
-	float: right;
-	width: 50%;
-	height: 100%;
-	background-color: rgba(75, 75, 75, 0.9);
-	opacity: 0;
-	-webkit-transition: opacity 0.3s;
-	-moz-transition: opacity 0.3s;
-}
-
-#comportamiento .caja2:hover {
-	opacity: 1;
-}
-
-#comportamiento .caja2 p#headline {
-	display: flex;
-	margin-right: -900px;
-	justify-content: center;
-	font-size: 30px;
-	text-align: center;
-	margin-top: 70px;
-}
-
-#comportamiento .caja2:hover p#headline {
-	margin-right: 2%;
-	-webkit-transition: margin 0.3s;
-	-moz-transition: margin 0.3s;
-}
-
-#comportamiento span {
-	font-size: 25px;
-	text-decoration: underline #fff;
-	color: #FFD100;
-}
-
-#comportamiento .sub {
-	font-size: 20px;
-	color: #FFB300;
-}
-
-#comportamiento .caja2 p#info2 {
-	position: absolute;
-	overflow: auto;
-	width: 40%;
-	height: 70%;
-	margin-left: 5%;
-  padding-right: 1%;
-	-webkit-transition: margin 0.3s;
-	-moz-transition: margin 0.3s;
-}
-
-#comportamiento .caja2:hover p#info2 {
-	margin-top: 5%;
-	margin-left: 5%;
-}
-
-#habitat {
-	background-image: url("./images/habitat.png");
-	background-size: cover;
-	background-attachment: fixed;
-	background-position: top center;
-}
-
-#habitat .caja1 {
-  text-align:justify;  
-  text-justify:auto;
-	overflow: hidden;
-	float: left;
-	width: 50%;
-	height: 100%;
-	background-color: rgba(75, 75, 75, 0.9);
-	opacity: 0;
-	-webkit-transition: opacity 0.3s;
-	-moz-transition: opacity 0.3s;
-}
-
-#habitat .caja1:hover {
-	opacity: 1;
-}
-
-#habitat .caja1 p#headline {
-	display: flex;
-	justify-content: center;
-	margin-left: -900px;
-	font-size: 30px;
-	text-align: center;
-	margin-top: 70px;
-}
-
-#habitat .caja1:hover p#headline {
-	margin-left: 2%;
-	-webkit-transition: margin 0.3s;
-	-moz-transition: margin 0.3s;
-}
-
-#habitat .caja1 p#info2 {
-	position: absolute;
-	width: 40%;
-	margin-left: 5%;
-	margin-top: 300px;
-	-webkit-transition: margin 0.3s;
-	-moz-transition: margin 0.3s;
-}
-
-#habitat .caja1:hover p#info2 {
-	margin-top: 5%;
-	margin-left: 5%;
-}
-
-#habitat .caja2 {
-  text-align:justify;  
-  text-justify:auto;
-	overflow: hidden;
-	float: right;
-	width: 50%;
-	height: 100%;
-	background-color: rgba(75, 75, 75, 0.9);
-	opacity: 0;
-	-webkit-transition: opacity 0.3s;
-	-moz-transition: opacity 0.3s;
-}
-
-#habitat .caja2:hover {
-	opacity: 1;
-}
-
-#habitat .caja2 p#headline {
-	display: flex;
-	margin-right: -900px;
-	justify-content: center;
-	font-size: 30px;
-	text-align: center;
-	margin-top: 70px;
-}
-
-#habitat .caja2:hover p#headline {
-	margin-right: 2%;
-	-webkit-transition: margin 0.3s;
-	-moz-transition: margin 0.3s;
-}
-
-#habitat .caja2 p#info2 {
-	position: absolute;
-	width: 40%;
-	margin-left: 5%;
-	margin-top: 300px;
-	-webkit-transition: margin 0.3s;
-	-moz-transition: margin 0.3s;
-}
-
-#habitat .caja2:hover p#info2 {
-	margin-top: 5%;
-	margin-left: 5%;
-}
-
-#gastronomia {
-	background-image: url("https://img.freepik.com/foto-gratis/pescados-verduras-cubiertos-sobre-fondo-negro_1220-552.jpg?size=626&ext=jpg");
-	background-repeat: no-repeat;
-	background-size: cover
-}
-
-#gastronomia .content {
-  text-align:justify;  
-  text-justify:auto;
-	position: relative;
-	margin: auto;
-	float: left;
-	width: 50%;
-	height: 100%;
-	margin-top: 5%;
-	margin-left: 7%;
-	margin-right: 4%
-}
-
-#gastronomia p {
-	left: 0;
-	position: absolute;
-	top: 30%;
-}
-
-#gastronomia .images {
-	position: relative;
-	float: right;
-	width: 50%;
-	height: 100%;
-}
-
-#gastronomia .images img {
-	position: relative;
-	display: inline-table;
-	margin: 2% 0% 0% 2%;
-	height: 100%;
-	width: 60%;
-	background-color: rgba(75, 75, 75, 0.9);
-	opacity: 1;
-	-webkit-transition: opacity 0.3s;
-	-moz-transition: opacity 0.3s;
-}
-
-#gastronomia .images div {
-	margin-top: 10px;
-	position: relative;
-	height: 30%;
-}
-
-#gastronomia .images p {
-	font-size: 30px;
-	color: #fff;
-	opacity: 0;
-	-webkit-transition: opacity 0.3s;
-	-moz-transition: opacity 0.3s;
-}
-
-#gastronomia .images #uno:hover {
-	opacity: 0.6;
-}
-
-#gastronomia .images #uno:hover+#textuno {
-	opacity: 1;
-}
-
-#gastronomia .images #dos:hover {
-	opacity: 0.5;
-}
-
-#gastronomia .images #dos:hover+#textdos {
-	opacity: 1;
-}
-
-#gastronomia .images #tres:hover {
-	opacity: 0.6;
-}
-
-#gastronomia .images #tres:hover+#texttres {
-	opacity: 1;
-}
-
-#gastronomia .images img.middle {
-	margin-right: 80px;
-}
-
-#gastronomia .images img.not {
-	margin-left: 100px;
-}
-
-#gastronomia .images p.middle {
-	margin-top: 25px;
-	margin-left: 150px;
-}
-
-#gastronomia .images p.not {
-	margin-top: 25px;
-	margin-left: 230px;
 }
